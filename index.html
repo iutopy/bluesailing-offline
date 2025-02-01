@@ -22,7 +22,7 @@
             padding: 2.5rem;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
+            max-width: 800px;
             width: 90%;
             text-align: center;
             animation: fadeIn 1s ease-in;
@@ -43,10 +43,59 @@
             margin-bottom: 1.5rem;
         }
 
+        h2 {
+            color: #2c5282;
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            text-align: left;
+        }
+
         p {
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 1.5rem;
+        }
+
+        .info-section {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .info-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-section li {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-section a {
+            color: #2c5282;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-section a:hover {
+            color: #1a365d;
+        }
+
+        .pdf-link {
+            background: #e2e8f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
         }
 
         .contact-info {
@@ -54,6 +103,7 @@
             padding: 1.5rem;
             border-radius: 10px;
             margin: 1.5rem 0;
+            text-align: center;
         }
 
         .contact-info a {
@@ -94,16 +144,53 @@
     <div class="maintenance-container">
         <img src="image.jpg" alt="Blue Sailing" class="logo-image">
         <h1>Oops, we're temporarily offline!</h1>
-        <p>We're fixing things to serve you better, but in the meantime, don't hesitate to reach out for anything you need:</p>
+        <p>We're fixing things to serve you better, but in the meantime, you can check out all the details about your trip here:</p>
         
+        <div class="info-section">
+            <h2>The Route</h2>
+            <ul>
+                <li>
+                    <span>Panama to Colombia</span>
+                    <a href="https://drive.google.com/file/d/18x9hjVJw_UHPYNptfU7DQrjHMSEE_YGv/view?usp=drivesdk" target="_blank" class="pdf-link">View PDF 📄</a>
+                </li>
+                <li>
+                    <span>Colombia to Panama</span>
+                    <a href="https://drive.google.com/file/d/17PfCIs1M42VL_fZyK78JYvEnlbyLGWCa/view?usp=drivesdk" target="_blank" class="pdf-link">View PDF 📄</a>
+                </li>
+                <li>
+                    <span>Preparing for Your Trip & Life Aboard</span>
+                    <a href="https://drive.google.com/file/d/10MbimE4S1R07i2P2BLOvhzPPf-SUsUCs/view?usp=drivesdk" target="_blank" class="pdf-link">View PDF 📄</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Charters</h2>
+            <ul>
+                <li>
+                    <span>Budget-Friendly Shared Charter</span>
+                    <a href="https://drive.google.com/file/d/1rr9W1PsVTzClIc2bAm2pGB1btWOYV_sl/view?usp=drivesdk" target="_blank" class="pdf-link">View PDF 📄</a>
+                </li>
+                <li>
+                    <span>All-Inclusive Shared Charter</span>
+                    <a href="https://drive.google.com/file/d/1FqCsyhCxDCVadlCngAOrKx_xwLK7OfwN/view?usp=drivesdk" target="_blank" class="pdf-link">View PDF 📄</a>
+                </li>
+                <li>
+                    <span>Private Charter</span>
+                    <a href="https://drive.google.com/file/d/1n2ZNMd6NqRlEGbyRkbataze8k-WOBSoo/view?usp=drivesdk" target="_blank" class="pdf-link">View PDF 📄</a>
+                </li>
+            </ul>
+        </div>
+
         <div class="contact-info">
+            <p>For any questions, feel free to reach out:</p>
             <p>
                 <a href="https://wa.me/573245787015">📱 +57 324 5787015</a><br>
                 <a href="mailto:BlueSailingInfo@gmail.com">📧 BlueSailingInfo@gmail.com</a>
             </p>
         </div>
 
-        <p>We'll be back soon, ready to set sail for more unforgettable adventures with you, sailmates! <span class="wave">🌊</span></p>
+        <p>We'll be back soon, ready to set sail for more unforgettable adventures with you, sailmates! <span class="wave">🌊</span>⛵</p>
     </div>
 </body>
 </html> 
