@@ -1,129 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Sailing - Under Maintenance</title>
     <style>
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        color: #333;
-      }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
 
-      .maintenance-container {
-        background: white;
-        padding: 2.5rem;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        max-width: 600px;
-        width: 90%;
-        text-align: center;
-        animation: fadeIn 1s ease-in;
-      }
+        .maintenance-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
 
-      h1 {
-        color: #2c5282;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-      }
+        .logo-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            object-fit: cover;
+        }
 
-      p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
+        h1 {
+            color: #2c5282;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
 
-      .contact-info {
-        background: #f7fafc;
-        padding: 1.5rem;
-        border-radius: 10px;
-        margin: 1.5rem 0;
-      }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
 
-      .contact-info a {
-        color: #2c5282;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
+        .contact-info {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
 
-      .contact-info a:hover {
-        color: #1a365d;
-      }
+        .contact-info a {
+            color: #2c5282;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-      .wave {
-        font-size: 2rem;
-        animation: wave 2s infinite;
-        display: inline-block;
-        transform-origin: 70% 70%;
-      }
+        .contact-info a:hover {
+            color: #1a365d;
+        }
 
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
+        .wave {
+            font-size: 2rem;
+            animation: wave 2s infinite;
+            display: inline-block;
+            transform-origin: 70% 70%;
         }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
 
-      @keyframes wave {
-        0% {
-          transform: rotate(0deg);
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        10% {
-          transform: rotate(14deg);
+
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
         }
-        20% {
-          transform: rotate(-8deg);
-        }
-        30% {
-          transform: rotate(14deg);
-        }
-        40% {
-          transform: rotate(-4deg);
-        }
-        50% {
-          transform: rotate(10deg);
-        }
-        60% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(0deg);
-        }
-      }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="maintenance-container">
-      <h1>Oops, we're temporarily offline!</h1>
-      <p>
-        We're fixing things to serve you better, but in the meantime, don't
-        hesitate to reach out for anything you need:
-      </p>
+        <img src="image.jpg" alt="Blue Sailing" class="logo-image">
+        <h1>Oops, we're temporarily offline!</h1>
+        <p>We're fixing things to serve you better, but in the meantime, don't hesitate to reach out for anything you need:</p>
+        
+        <div class="contact-info">
+            <p>
+                <a href="tel:+573245787015">📞 +57 324 5787015</a><br>
+                <a href="mailto:BlueSailingInfo@gmail.com">📧 BlueSailingInfo@gmail.com</a>
+            </p>
+        </div>
 
-      <div class="contact-info">
-        <p>
-          <a href="tel:+573245787015">📞 +57 324 5787015</a><br />
-          <a href="mailto:BlueSailingInfo@gmail.com"
-            >📧 BlueSailingInfo@gmail.com</a
-          >
-        </p>
-      </div>
-
-      <p>
-        We'll be back soon, ready to set sail for more unforgettable adventures
-        with you, sailmates! <span class="wave">🌊</span>
-      </p>
+        <p>We'll be back soon, ready to set sail for more unforgettable adventures with you, sailmates! <span class="wave">🌊</span></p>
     </div>
-  </body>
-</html>
+</body>
+</html> 
